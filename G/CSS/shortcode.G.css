@@ -102,7 +102,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../IMG/notice.svg) no-repeat;
+  background: url(https://cdn.jsdelivr.net/gh/youranreus/R@v1.0.3/G/IMG/notice.svg) no-repeat;
   opacity: .1;
 }
 
@@ -121,7 +121,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../IMG/warn.svg) no-repeat;
+  background: url(https://cdn.jsdelivr.net/gh/youranreus/R@v1.0.3/G/IMG/warn.svg) no-repeat;
   opacity: .1;
 }
 .post-content-tag{

@@ -51,6 +51,10 @@ function pjax_complete(){
 	//显示主页面
 	$("#M").addClass("opacity-show");
 	PreFancybox();
+	$("img.lazyload").lazyload({
+				threshold: 100,
+				effect: "fadeIn"
+	});
 	ajaxc();
 }
 
@@ -66,9 +70,15 @@ function PreFancybox(){
 						return '';
 					}
 				return '<a data-fancybox="gallery" no-pjax data-type="image" href="' + $(this).attr("src") + '" class="light-link"></a>';
-		 })
+		 });
+		 $(this).addClass("lazyload");
+		 $(this).attr('data-original',$(this).attr("src"));
+		 $(this).attr('src','');
+		 $(this).after('<span class="imageinfo">'+ $(this).attr("title") +'</span>');
 	});
 }
+
+
 
 function show_site_runtime(bdate){
 	window.setTimeout("show_site_runtime('" +bdate + "')",1000);

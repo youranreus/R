@@ -34,8 +34,6 @@ $(function() {
 					myField.selectionStart || myField.selectionStart == "0" ? (startPos = myField.selectionStart, endPos = myField.selectionEnd, cursorPos = startPos, myField.value = myField.value.substring(0, startPos) + tag + myField.value.substring(endPos, myField.value.length), cursorPos += tag.length, myField.focus(), myField.selectionStart = cursorPos, myField.selectionEnd = cursorPos) : (myField.value += tag, myField.focus());
 			}
 	}
-
-	$("#wmd-button-row").append('<li class="wmd-spacer wmd-spacer1"></li><li class="wmd-button" id="wmd-sc-button" style="" title="插入短代码">短代码</li>');
 	$("#wmd-button-row").append('<li class="wmd-spacer wmd-spacer1"></li><li class="wmd-button" id="wmd-owo-button" style="" title="插入表情">OWO</span></li>');
 	$("#wmd-button-row").append(`
 		<div id="OwO-editor" style="display:none"><div class="OwO OwO-open" id="qaq">

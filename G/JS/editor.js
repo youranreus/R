@@ -135,10 +135,7 @@ $(function() {
 			<a id="g-bili">B站视频</a>
 			<a id="g-art">文章跳转</a>
 			<a id="g-notice">提示框</a>
-			<a id="g-notice-block">提示块</a>
 			<a id="g-warn">警告框</a>
-			<a id="g-warn-block">警告块</a>
-			<a id="g-dl">下载按钮</a>
 			<a id="g-tag">标签</a>
 			<a id="g-photos">相册</a>
 	</div>
@@ -186,25 +183,10 @@ $(function() {
 		myField = document.getElementById("text"),
 		insertAtCursor(myField, '[notice]内容[/notice]')
 	});
-	$(document).on("click", "#g-notice-block",
-	function() {
-		myField = document.getElementById("text"),
-		insertAtCursor(myField, '[notice-block]内容[/notice-block]')
-	});
-	$(document).on("click", "#g-warn-block",
-	function() {
-		myField = document.getElementById("text"),
-		insertAtCursor(myField, '[warn-block]内容[/warn-block]')
-	});
 	$(document).on("click", "#g-warn",
 	function() {
 		myField = document.getElementById("text"),
 		insertAtCursor(myField, '[warn]内容[/warn]')
-	});
-	$(document).on("click", "#g-dl",
-	function() {
-		myField = document.getElementById("text"),
-		insertAtCursor(myField, '[dl href="链接（无需http://）"]文件名[/dl]')
 	});
 	$(document).on("click", "#g-tag",
 	function() {
